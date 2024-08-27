@@ -498,3 +498,8 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+#excluindo DB
+*.db 
+*.db-schema
+*.db-wal
