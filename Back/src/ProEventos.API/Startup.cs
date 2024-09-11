@@ -67,7 +67,7 @@ namespace ProEventos.API
                             ValidateAudience = false
                         };
                     });
-                    
+            services.AddCors();        
             services.AddControllers()
                     .AddJsonOptions(options =>
                         options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter())
@@ -87,7 +87,7 @@ namespace ProEventos.API
             services.AddScoped<ILotePersist, LotePersist>();
             services.AddScoped<IUserPersist, UserPersist>();
 
-            services.AddCors();
+            
             services.AddSwaggerGen(options =>
             {
                 options.SwaggerDoc("v1", new OpenApiInfo { Title = "ProEventos.API", Version = "v1" });
