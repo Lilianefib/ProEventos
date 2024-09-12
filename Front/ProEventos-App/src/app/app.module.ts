@@ -40,6 +40,10 @@ import { RegistrationComponent } from './components/user/registration/registrati
 import { AccountService } from './services/account.service';
 import { JwtInterceptor } from './interceptors/jwt.interceptor';
 import { HomeComponent } from './components/home/home.component';
+import { PerfilDetalheComponent } from './components/user/perfil/perfil-detalhe/perfil-detalhe.component';
+import { PalestranteDetalheComponent } from './components/palestrantes/palestrante-detalhe/palestrante-detalhe.component';
+import { PalestranteListaComponent } from './components/palestrantes/palestrante-lista/palestrante-lista.component';
+import { RedesSociaisComponent } from './components/redesSociais/redesSociais.component';
 
 defineLocale('pt-br', ptBrLocale);
 
@@ -50,7 +54,11 @@ defineLocale('pt-br', ptBrLocale);
     PalestrantesComponent,
     ContatosComponent,
     DashboardComponent,
+    PalestranteListaComponent,
+    PalestranteDetalheComponent,
     PerfilComponent,
+    PerfilDetalheComponent,
+    RedesSociaisComponent,
     NavComponent,
     TituloComponent,
     DateTimeFormatPipe,
